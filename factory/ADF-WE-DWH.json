@@ -1,0 +1,9 @@
+{
+	"name": "ADF-WE-DWH",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "01ad1c72-b5b9-4992-a130-55caef29e49a",
+		"tenantId": "774c56ef-5185-414f-8b56-238bc673ad07"
+	}
+}
