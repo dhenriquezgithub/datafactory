@@ -38,21 +38,33 @@
 							{
 								"source": {
 									"name": "AGE"
+								},
+								"sink": {
+									"name": "NUM_AGE"
 								}
 							},
 							{
 								"source": {
 									"name": "SEX"
+								},
+								"sink": {
+									"name": "NUM_SEX"
 								}
 							},
 							{
 								"source": {
 									"name": "BMI"
+								},
+								"sink": {
+									"name": "NUM_BMI"
 								}
 							},
 							{
 								"source": {
 									"name": "BP"
+								},
+								"sink": {
+									"name": "NUM_NP"
 								}
 							}
 						],
