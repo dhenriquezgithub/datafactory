@@ -34,6 +34,28 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "AGE"
+								}
+							},
+							{
+								"source": {
+									"name": "SEX"
+								}
+							},
+							{
+								"source": {
+									"name": "BMI"
+								}
+							},
+							{
+								"source": {
+									"name": "BP"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
