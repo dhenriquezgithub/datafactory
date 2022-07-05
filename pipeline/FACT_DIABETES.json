@@ -13,7 +13,6 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
@@ -32,39 +31,36 @@
 						"sqlWriterUseTableLock": false
 					},
 					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
 							{
 								"source": {
-									"name": "AGE"
+									"name": "AGE",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "NUM_AGE"
+									"name": "AGE",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 2,
+									"precision": 8
 								}
 							},
 							{
 								"source": {
-									"name": "SEX"
+									"name": "SEX",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "NUM_SEX"
-								}
-							},
-							{
-								"source": {
-									"name": "BMI"
-								},
-								"sink": {
-									"name": "NUM_BMI"
-								}
-							},
-							{
-								"source": {
-									"name": "BP"
-								},
-								"sink": {
-									"name": "NUM_NP"
+									"name": "SEX",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 2,
+									"precision": 8
 								}
 							}
 						],
