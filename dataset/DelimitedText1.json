@@ -1,0 +1,68 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Diabetes_delimeted.csv",
+				"container": "landing"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "AGE",
+				"type": "String"
+			},
+			{
+				"name": "SEX",
+				"type": "String"
+			},
+			{
+				"name": "BMI",
+				"type": "String"
+			},
+			{
+				"name": "BP",
+				"type": "String"
+			},
+			{
+				"name": "S1",
+				"type": "String"
+			},
+			{
+				"name": "S2",
+				"type": "String"
+			},
+			{
+				"name": "S3",
+				"type": "String"
+			},
+			{
+				"name": "S4",
+				"type": "String"
+			},
+			{
+				"name": "S5",
+				"type": "String"
+			},
+			{
+				"name": "S6",
+				"type": "String"
+			},
+			{
+				"name": "Y",
+				"type": "String"
+			}
+		]
+	}
+}
